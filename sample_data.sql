@@ -1,4 +1,4 @@
--- Drop all existing data to ensure a clean start
+-- Drop all existing data to avoid duplicates
 TRUNCATE SiblingRelation, Enrollment, IndividualLesson, GroupLesson, EnsembleLesson, InstrumentRental, Payment, InstructorPayment, Lesson, PriceScheme, Classroom, Availability, Instrument, InstructorInstrument, Student, ContactDetails, ContactPerson, Address RESTART IDENTITY CASCADE;
 
 INSERT INTO Address (Street, Zip, City)
